@@ -39,7 +39,7 @@ router.post('/login', (req, res) => {
           res.status(200).json({
             success: true,
             user: loggedInUser,
-            message: 'Login Success',
+            message: '로그인 성공',
             token: token,
           });
         } else {

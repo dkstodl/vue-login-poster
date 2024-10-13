@@ -39,7 +39,7 @@ export default {
 	},
 	methods: {
 		logout() {
-			bus.$emit('show:toast', 'User logged out');
+			bus.$emit('show:toast', '로그아웃 되었습니다.');
 			this.$store.commit('LOGOUT');
 			this.$router.push('/');
 		},
