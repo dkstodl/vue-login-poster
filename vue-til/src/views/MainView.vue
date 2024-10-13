@@ -63,7 +63,7 @@ export default {
 				if (confirm('해당 포스트를 삭제하시겠습니까?')) {
 					const response = await deletePostById(id);
 					await this.fetchData();
-					bus.$emit('show:toast', `${response.data.title} was deleted`);
+					bus.$emit('show:toast', `${response.data.title} 가 삭제되었습니다.`);
 				}
 			} catch (error) {
 				console.log(error);

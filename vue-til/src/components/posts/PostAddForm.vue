@@ -75,7 +75,7 @@ export default {
 					title: this.title,
 					contents: this.contents,
 				});
-				bus.$emit('show:toast', `${response.data.data.title} was created`);
+				bus.$emit('show:toast', `${response.data.data.title} 생성되었습니다.`);
 				this.$router.push('/main');
 			} catch (error) {
 				console.log(error);
